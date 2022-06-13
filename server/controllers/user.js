@@ -26,7 +26,6 @@ const registerUser = async (data) => {
             email, password, firstName, lastName, contactNumber
         })
 
-
         const token = giveToken({
             userId: user._id
         });

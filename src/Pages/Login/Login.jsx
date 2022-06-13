@@ -38,9 +38,6 @@ export default function Login() {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState('');
 
-
-
-
   const classes = useStyles();
 
   const loginUserCallback = async () => {
