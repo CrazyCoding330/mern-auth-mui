@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { AuthProvider, AuthContext } from './context/context'
 
-import Navbar from './components/Navbar/Navbar'
 import Login from './Pages/Login/Login'
 import Register from './Pages/Register/Register'
 import Profile from './Pages/Profile/Profile'
@@ -83,10 +82,7 @@ function App() {
       <div className={classes.root}>
         <Router>
           <AuthProvider>
-            <Navbar open={open} setOpen={setOpen} />
             <div className={clsx(classes.content, { [classes.contentShift]: open })}>
-
-
               <Route exact path="/" component={Login} />
 
               <Route exact path="/profile" component={Profile} />

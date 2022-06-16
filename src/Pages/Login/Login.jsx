@@ -65,8 +65,9 @@ export default function Login() {
     email: '',
     password: '',
   });
-
-
+  
+  const OnRegister = () => {
+  }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -80,8 +81,7 @@ export default function Login() {
         </Typography>
         {open && (<ErrorMessage open={open} setOpen={setOpen} message={message} />)}
         <form className={classes.form} onSubmit={onSubmit}>
-          <TextField
-            variant="outlined"
+          <TextField variant="outlined"
             margin="normal"
             required
             fullWidth
@@ -116,16 +116,11 @@ export default function Login() {
           >
             Submit
           </Button>
-
+          <Button onClick={OnRegister}>Register</Button>
           <Grid container>
-
             <Grid item>
               <Typography>
-
               </Typography>
-
-
-
             </Grid>
           </Grid>
         </form>
